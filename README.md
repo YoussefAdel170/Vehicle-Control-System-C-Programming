@@ -1,41 +1,63 @@
-# Vehicle Control System
+# 🚗 Vehicle Control System
 
-## Description
+## 📖 Overview
 
-### This project simulates a Vehicle Control System in C programming. It allows users to control the vehicle’s engine, speed, and manage sensor-based features such as traffic light control, room temperature, and engine temperature.
+The **Vehicle Control System** is a C-based simulation that models a vehicle’s core functionalities.  
+This interactive program allows users to:
 
-## Features
+- Control the engine state (ON/OFF)
+- Adjust vehicle speed based on traffic light signals
+- Manage room and engine temperatures using sensors
 
-### 1. Turn the vehicle engine on or off.
+It provides a **menu-driven interface** for real-time interaction, making it an ideal project for learning **embedded systems** and **C programming concepts**.
 
-### 2. Control vehicle speed based on traffic light color.
+---
 
-### 3. Adjust room temperature using a sensor (AC on/off).
+## ⚙️ Features
 
-### 4. Manage engine temperature with an engine temperature controller.
+- **Engine Control**: Turn the vehicle engine ON or OFF
+- **Traffic-Aware Speed Management**:
+  - **Green (G/g)** → Speed = 100 km/h
+  - **Orange (O/o)** → Speed = 30 km/h
+  - **Red (R/r)** → Vehicle stops
+- **Room Temperature Control**: Adjusts cabin temperature automatically based on sensor readings
+- **Engine Temperature Management**: Maintains safe engine temperature using a controller (if enabled)
+- **Interactive Menu**: User-friendly interface for all vehicle operations
 
-### 5. Real-time, interactive menu-driven system.
+---
 
-## How to Use
+## 🛠 Installation & Usage
 
-### 1. Compile the program using a C compiler (e.g., GCC).
+### Prerequisites
 
-### 2. Run the executable.
+- C Compiler (e.g., GCC)
+- Terminal or command-line interface
 
-### 3. Choose from the available options:
+### Steps
 
-#### a. Turn on the vehicle engine
-
-#### b. Turn off the vehicle engine
-
-#### c. Quit the system
-
-### 4. Once the engine is on, you can interact with the sensor menu to adjust vehicle settings.
-
-## Requirements
-
-### A C compiler (e.g., GCC) for compiling the code.
-
-## License
-
-### This project is open-source.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/YoussefAdel170/Vehicle-Control-System.git
+   ```
+2. **Navigate into the project directory**
+   ```bash
+   cd Vehicle-Control-System
+   ```
+3. **Compile the program:**
+   ```bash
+   gcc vehicle_control_system.c -o vehicle_control_system
+   ```
+4. **Run the program:**
+   ```bash
+   ./vehicle_control_system
+   ```
+5. **Interact via the menu:**
+   ```
+    a. Turn on the vehicle engine
+    b. Turn off the vehicle engine
+    c. Quit the system
+   ```
+6. **Once the engine is ON, access sensor options:**
+   - Set traffic light color
+   - Set room temperature
+   - Set engine temperature (if controller is enabled)
